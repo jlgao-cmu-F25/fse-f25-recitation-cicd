@@ -23,3 +23,5 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+      - name: Deploy on Cloud
+        run: curl "https://fse-f25-recitation-cicd-74em.onrender.com"
